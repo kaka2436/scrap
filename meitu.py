@@ -8,19 +8,6 @@ from bs4 import BeautifulSoup
 num = 0
 tieq = Queue.Queue()
 
-
-request_headers = {
-    "Accept":"*/*",
-    "Accept-Encoding":"gzip, deflate, br",
-    "Accept-Language":"zh-CN,zh;q=0.8",
-    "Connection":"keep-alive",
-    "Cookie":"BAIDUID=B698C5157C28E857179AB873226E506E:FG=1; BIDUPSID=B698C5157C28E857179AB873226E506E; PSTM=1498463474; BDUSS=UwMlQzT1BDWTRkbjNzWVVSN3prMVBUTllVTVFlZzE2WDAzQzJoaTE1R3BibnRaSVFBQUFBJCQAAAAAAAAAAAEAAAAV-Sh138ffx7XuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKnhU1mp4VNZS1; BDRCVFR[feWj1Vr5u3D]=I67x6TjHwwYf0; PSINO=1; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; H_PS_PSSID=1432_21084_17001_23630_20719",
-    "Host":"tbmsg.baidu.com",
-    "Referer":"https://tieba.baidu.com/f?kw=%E7%BE%8E%E5%9B%BE&ie=utf-8",
-    "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
-}
-
-
 #打开起始链接，识别其中的帖子链接
 #百度贴吧中，帖子的链接class为j_th_tit 
 def startScrap(url):
